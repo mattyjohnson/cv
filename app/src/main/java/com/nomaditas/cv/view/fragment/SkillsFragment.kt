@@ -7,9 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.nomaditas.cv.R
+import com.nomaditas.cv.view.adapters.SkillsAdapter
 import com.nomaditas.cv.viewmodel.SkillsViewModel
-import kotlinx.android.synthetic.main.fragment_profile.*
+import kotlinx.android.synthetic.main.fragment_skills.*
 
 class SkillsFragment : Fragment() {
     private lateinit var model: SkillsViewModel
@@ -26,7 +28,10 @@ class SkillsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        list.layoutManager = LinearLayoutManager(context)
+
         model.getSkills().observe(this, Observer {
+            list.adapter = context?.let { it1 -> SkillsAdapter(it1, it) }
             progressBar.visibility = View.GONE
         })
     }
