@@ -24,7 +24,7 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Picasso.with(context).load(model.getPictureUrl()).into(imageProfile)
+        Picasso.with(context).load(model.getPictureUrl()).transform(CircleTransform()).into(imageProfile)
         textName.text = model.getName()
         textProfile.text = model.getSummary()
     }
