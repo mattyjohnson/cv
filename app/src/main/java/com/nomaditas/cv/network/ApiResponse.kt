@@ -8,5 +8,7 @@ class ApiResponse (
     val visaStatus: String,
     val availability: String,
     val profile: String,
-    val photoUrl: String
+    val photoUrl: String,
+    val experience: List<Experience>,
+    val skills: List<String>
 )
