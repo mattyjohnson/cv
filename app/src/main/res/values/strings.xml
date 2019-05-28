@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CV</string>
+    <string name="app_name">MattCV</string>
 
     <string name="tab_title_profile">Profile</string>
     <string name="tab_title_skills">Skills</string>
