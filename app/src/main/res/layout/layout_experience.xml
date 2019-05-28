@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              tools:context=".view.fragment.ExperienceFragment">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/text_client"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="HSBC"/>
+
+        <TextView
+                android:id="@+id/text_dates"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                tools:text="01/06/2019 - Present"/>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/text_description"
+            android:layout_width="match_parent"
+            tools:text="The quick brown dog jumped over the lazy fox."
+            android:layout_height="wrap_content"/>
+</LinearLayout>
