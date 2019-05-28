@@ -4,6 +4,7 @@
 
     <dimen name="table_spacing">40dp</dimen>
     <dimen name="text_size_profile_name">22sp</dimen>
-    <dimen name="text_size_profile_summary">18sp</dimen>
+    <dimen name="text_size_profile_summary">14sp</dimen>
     <dimen name="text_size_profile_table">16sp</dimen>
+    <dimen name="margin_profile">48dp</dimen>
 </resources>

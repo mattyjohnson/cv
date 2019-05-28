@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.nomaditas.cv.R
 import com.squareup.picasso.Picasso
@@ -24,8 +25,16 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Picasso.with(context).load(model.getPictureUrl()).transform(CircleTransform()).into(imageProfile)
-        textName.text = model.getName()
-        textProfile.text = model.getSummary()
+
+        model.getProfile().observe(this, Observer {
+            Picasso.with(context).load(it.photoUrl).transform(CircleTransform()).into(imageProfile)
+            textName.text = it.name
+            textProfile.text = it.profile
+            textPhoneNumber.text = it.phoneNumber
+            textEmail.text = it.email
+            textLinkedIn.text = it.linkedIn
+            textVisaStatus.text = it.visaStatus
+            textAvailability.text = it.availability
+        })
     }
 }
