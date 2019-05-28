@@ -1,4 +1,4 @@
-package com.nomaditas.cv.view
+package com.nomaditas.cv.view.widget
 
 import android.graphics.*
 import com.squareup.picasso.Transformation

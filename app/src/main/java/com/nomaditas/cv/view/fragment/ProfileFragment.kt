@@ -1,4 +1,4 @@
-package com.nomaditas.cv.view
+package com.nomaditas.cv.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.nomaditas.cv.R
+import com.nomaditas.cv.view.widget.CircleTransform
+import com.nomaditas.cv.viewmodel.ProfileViewModel
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_profile.*
 

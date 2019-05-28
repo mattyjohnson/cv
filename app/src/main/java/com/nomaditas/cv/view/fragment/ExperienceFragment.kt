@@ -1,4 +1,4 @@
-package com.nomaditas.cv.view
+package com.nomaditas.cv.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.nomaditas.cv.R
 
-class SkillsFragment : Fragment() {
+class ExperienceFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_skills, container, false)
+        return inflater.inflate(R.layout.fragment_experience, container, false)
     }
 }

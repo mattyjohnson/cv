@@ -1,4 +1,4 @@
-package com.nomaditas.cv.view
+package com.nomaditas.cv.view.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

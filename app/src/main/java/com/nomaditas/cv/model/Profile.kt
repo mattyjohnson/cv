@@ -1,4 +1,4 @@
-package com.nomaditas.cv.data
+package com.nomaditas.cv.model
 
 import com.nomaditas.cv.network.ApiResponse
 
