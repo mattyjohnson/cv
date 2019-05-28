@@ -35,6 +35,7 @@ class ProfileFragment : Fragment() {
             textLinkedIn.text = it.linkedIn
             textVisaStatus.text = it.visaStatus
             textAvailability.text = it.availability
+            progressBar.visibility = View.GONE
         })
     }
 }
