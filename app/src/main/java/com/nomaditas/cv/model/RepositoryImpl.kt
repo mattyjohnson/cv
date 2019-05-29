@@ -8,13 +8,21 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-object RepositoryImpl: Repository {
-    var profile = MutableLiveData<Profile>()
-    var skills = MutableLiveData<List<String>>()
-    var experience = MutableLiveData<List<Experience>>()
+class RepositoryImpl: Repository {
+    private var profile = MutableLiveData<Profile>()
+    private var skills = MutableLiveData<List<String>>()
+    private var experience = MutableLiveData<List<Experience>>()
 
-    override fun getProfile(): String {
-        return "test"
+    override fun getProfile(): MutableLiveData<Profile> {
+        return profile
+    }
+
+    override fun getSkills(): MutableLiveData<List<String>> {
+        return skills
+    }
+
+    override fun getExperience(): MutableLiveData<List<Experience>> {
+        return experience
     }
 
     init {
