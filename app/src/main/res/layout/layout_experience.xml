@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              tools:context=".view.fragment.ExperienceFragment">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_experience"
+        tools:context=".view.fragment.ExperienceFragment">
 
     <LinearLayout
             android:orientation="horizontal"
@@ -15,6 +18,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textSize="@dimen/text_size_client"
+                android:textStyle="bold"
                 tools:text="HSBC"/>
 
         <TextView
@@ -23,12 +28,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_dates"
                 tools:text="01/06/2019 - Present"/>
     </LinearLayout>
 
     <TextView
             android:id="@+id/text_description"
             android:layout_width="match_parent"
-            tools:text="The quick brown dog jumped over the lazy fox."
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_experience"
+            tools:text="The quick brown dog jumped over the lazy fox."/>
 </LinearLayout>
