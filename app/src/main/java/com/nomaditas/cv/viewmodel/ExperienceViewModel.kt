@@ -5,8 +5,8 @@ import androidx.lifecycle.ViewModel
 import com.nomaditas.cv.model.Repository
 import com.nomaditas.cv.network.Experience
 
-class ExperienceViewModel : ViewModel() {
-    private var experience = Repository.experience
+class ExperienceViewModel(repository: Repository) : ViewModel() {
+    private var experience = repository.getExperience()
 
     fun getExperience(): MutableLiveData<List<Experience>> {
         return experience
